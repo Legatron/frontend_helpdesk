@@ -35,6 +35,8 @@ jobs:
         run: npm run lint
 
       - name: Build
+        env:
+          PUBLIC_PATH: /${{ github.event.repository.name }}/
         run: npm run build
 
       - name: Setup Pages
