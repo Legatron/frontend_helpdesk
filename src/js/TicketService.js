@@ -5,7 +5,7 @@
 
 import createRequest from './api/createRequest';
 
-const BASE_URL = 'https://backend-helpdesk-q2ru.onrender.com'; // укажите ваш адрес бэкенда
+const BASE_URL = 'https://backend-helpdesk-q2ru.onrender.com'; // укажите адрес бэкенда
 
 export default class TicketService {
   async list() {
