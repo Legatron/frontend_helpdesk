@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" fill="none" stroke="%23ccc" stroke-width="0.5"/></svg>');
+}
+
+.helpdesk {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.helpdesk__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.helpdesk__add-btn {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ticket {
+  border: 1px solid #333;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ticket__header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+}
+
+.ticket__status {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.ticket__check {
+  color: #333;
+}
+
+.ticket--done .ticket__check::before {
+  content: '✓';
+}
+
+.ticket__name {
+  flex: 1;
+  font-size: 16px;
+}
+
+.ticket__date {
+  color: #666;
+  font-size: 14px;
+}
+
+.ticket__actions {
+  display: flex;
+  gap: 5px;
+}
+
+.ticket__actions button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.ticket__description {
+  padding: 0 15px 15px 60px;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal__title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.modal__input,
+.modal__textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.modal__textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal__actions button {
+  padding: 8px 20px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
